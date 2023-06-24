@@ -1,2 +1,5 @@
 <?php
-require_once "views/admin/components/layout.php";
+
+use App\Services\Page;
+
+Page::part('layout');

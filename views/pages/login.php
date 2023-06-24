@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Auth OOP</title>
+    <title>AUTH OOP</title>
     <meta name="author" content="Snooper">
     <meta name="description" content="">
 
@@ -51,6 +51,11 @@ session_start();
         </form>
     </section>
     <?php
+
+    /**
+     * Вывод сообщения об ошибке, текст которого берется из сессии.
+     */
+
     if (isset($_SESSION['message'])) {
         echo '
                 <section class="mt-10">
@@ -67,13 +72,11 @@ session_start();
 </main>
 
 <div class="max-w-lg mx-auto text-center mt-12 mb-6">
-    <p class="text-white">Don't have an account? <a href="/register.php" class="font-bold hover:underline">Sign up</a>.</p>
+    <p class="text-white">Don't have an account? <a href="/register" class="font-bold hover:underline">Sign up</a>.</p>
 </div>
 
 <footer class="max-w-lg mx-auto flex justify-center text-white">
-    <a href="#" class="hover:underline">Contact</a>
-    <span class="mx-3">•</span>
-    <a href="#" class="hover:underline">Privacy</a>
+    <a href="/" class="hover:underline">Home</a>
 </footer>
 </body>
 </html>
