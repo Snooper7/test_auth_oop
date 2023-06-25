@@ -27,6 +27,9 @@ class App
         }
     }
 
+    /**
+     * Функция проверяет флаг включения базы, вводит данные подключения в RedBean и проверяет есть ли подключение
+     */
     public static function db(): void
     {
         $config = require_once "config/db.php";

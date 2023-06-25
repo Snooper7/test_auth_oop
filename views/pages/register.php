@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+use App\Services\Router;
+
+if ($_SESSION["user"]){
+    \App\Services\Router::redirect('/profile');
+}
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +40,7 @@ session_start();
     </section>
 
     <section class="mt-10">
-        <form class="flex flex-col" method="POST" action="/vendor/singup.php">
+        <form class="flex flex-col" method="POST" action="auth/register">
             <div class="mb-3 pt-1 rounded bg-gray-200">
                 <label class="block text-gray-700 text-sm font-bold mb-1 ml-3" for="name">Name</label>
                 <input type="text" name="name" id="name"
