@@ -9,7 +9,7 @@ session_start()
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Welcome to TestAuth</title>
+    <title>Test_Auth_OOP</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,12 +68,10 @@ session_start()
             <div class="justify-center row">
                 <div class="w-full lg:w-2/3">
                     <div class="pt-32 mb-12 text-center lg:pt-48 header-hero-content">
-                        <h3 class="text-4xl font-light leading-tight text-white header-sub-title wow fadeInUp"
-                            data-wow-duration="1.3s" data-wow-delay="0.2s">Basic - SaaS Landing Page</h3>
                         <h2 class="mb-3 text-4xl font-bold text-white header-title wow fadeInUp"
-                            data-wow-duration="1.3s" data-wow-delay="0.5s">Kickstart Your SaaS or App Site</h2>
+                            data-wow-duration="1.3s" data-wow-delay="0.5s">Тестовая форма авторизации</h2>
                         <p class="mb-8 text-white text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            Выполненна по методологии ООП без использования принципа SOLID. Реализован паттерн MVC примерно как во фреймворке Laravel. </p>
                         <a href="/profile" class="main-btn gradient-btn gradient-btn-2 wow fadeInUp" data-wow-duration="1.3s"
                            data-wow-delay="1.1s">Go to profile</a>
                     </div> <!-- header hero content -->

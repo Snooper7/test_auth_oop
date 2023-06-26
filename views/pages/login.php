@@ -27,6 +27,7 @@ if ($_SESSION["user"]){
             background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
         }
     </style>
+    <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
 </head>
 <body class="body-bg min-h-screen pt-3 md:pt-10 pb-6 px-2 md:px-0" style="font-family:'Lato',sans-serif;">
 <header class="max-w-lg mx-auto">
@@ -51,6 +52,13 @@ if ($_SESSION["user"]){
                 <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
                 <input type="password" name="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
             </div>
+            <div 
+                style="height: 100px"
+                id="captcha-container"
+                class="smart-captcha"
+                data-sitekey="ysc1_teQtKDs8GudvOM6jP48ERycalUXQlIcscGC0LeoN967b9488"
+            ></div>
+
             <div class="flex justify-end">
                 <a href="#" class="text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6">Forgot your password?</a>
             </div>

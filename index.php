@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+error_reporting(1);
 use App\Services\App;
 /**
  * Файл index.php является фронт контроллером и только запускает маршрутизацию
